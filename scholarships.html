@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="/scholarships.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <title>Home | Graphic and Multimedia Design</title>
+  <link rel="icon" href="http://mc-dma.com/wp-content/uploads/2018/11/favi.png">
+</head>   
+<body style="background-color: #F2F2F2">
+<style>
+    html {
+    font-family: 'Open Sans', sans-serif;
+    color: #545454;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+  }
+  @media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+    .navbar .nav-item:hover .nav-link{ color: #fff;  }
+    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+    .navbar .dropdown-menu.fade-up{ top:180%;  }
+    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+  }
+  .max-width-95rem {
+      max-width: 95rem;
+  }
+  .navbar-custom {
+    background-color: #f2f2f2;
+    box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.25rem 2% 0.25rem 2%;
+  }
+  .title-text {
+    color: #545454;
+    font-size: 19.5px;
+    overflow: hidden;
+    background: linear-gradient(to right, #4FBBEC, #4FBBEC 50%, #545454 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 1500ms ease;
+    text-decoration: none;
+    margin: 0;
+  }
+  .title-text:hover {
+    background-position: -100% 100%;
+  }
+  .nav-item {
+    transition: background-color .5s ease;
+  }
+  .nav-item:hover {
+    background-color: #545454;
+    color: #f2f2f2;
+  }
+  .navbar-nav > .active {
+    background-color: #545454;
+    color: #f2f2f2;
+  }
+  .brand-container {
+    display: flex;
+  }
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .mp-college {
+    color: #545454;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    transition: none;
+    font-size: 0.9em !important;
+  }
+  .title {
+    font-size: 19.5px;
+    margin-left: 1em;
+    letter-spacing: 1px;
+    padding-top: 4px;
+  }
+  .nav-link {
+    color: #545454;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .dropdown-menu {
+    border-radius: 0;
+  }
+  .dropdown-item {
+    color: #545454;
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+  .dropdown-menu-right {
+    background-color: #545454 !important;
+    border-radius: 0;
+  }
+  .form-control {
+    background-color: #545454 !important;
+    color: #f2f2f2 !important;
+    border: none;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .form-control:focus{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .search-dropdown:after {
+    content: none;
+  }
+  footer{
+    font-family: Open Sans;
+    margin: 0;
+    width: 100%;
+    font-size: .9em;
+    text-align: center;
+    background: lightgray;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    margin: 0;
+    padding: 0;
+}
+footer a{
+    text-decoration: none;
+}
+.inner_footer{
+    padding: 2em;
+}
+</style>
+  <nav class="navbar navbar-expand-md navbar-custom">
+    <a class="navbar-brand" href="/home.html">
+      <div class="brand-container">
+        <img src="http://mc-dma.com/wp-content/uploads/2018/11/cropped-GMDlogo-1.png" alt="" width="61" height="60">
+        <div class="title">
+          <h1 class="title-text">GRAPHIC AND MULTIMEDIA DESIGN <br /></h1>
+          <p class="mp-college">Moorpark College</p>
+        </div>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">GALLERY<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PROGRAMS </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">DEGREES & CERTIFICATES</a></li>
+                  <li><a class="dropdown-item" href="#">COURSE DESCRIPTIONS</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">RESOURCES </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/scholarships.html">SCHOLARSHIPS</a></li>
+                  <li><a class="dropdown-item" href="/lab_hours.html">LAB HOURS</a></li>
+                  <li><a class="dropdown-item" href="/links.html">LINKS</a></li>
+                  <li><a class="dropdown-item" href="#">SUGGESTED BOOKS</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ALUMNI</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about.html">ABOUT</a>
+            </li>
+            <div class="nav-item dropdown search-dropdown">
+              <a data-toggle="dropdown" class="nav-item nav-link" href="#"><i class="bi bi-search" style="font-size: 7px;"></i></a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <div>
+                  <form>
+                    <div class="input-group search-box">								
+                        <input type="text" id="search" class="form-control" placeholder="Search" style="width: 250px;">
+                    </div>
+                  </form>                        
+                </div>
+              </div>
+            </div>
+            <li>
+              <a data-toggle="dropdown" class="nav-item nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+    
+    <div class="container-sm">
+        <div class="mt-5">
+                <h1><center>ANNUAL SCHOLARSHIPS</center></h1>
+        </div>
+        <div class="mx-auto" style="width: 700px;">
+            <p style="text-indent: 50px">Every spring, students are invited to submit their work to the Annual Graphic and Multimedia Design Scholarship Competition. The competition is an opportunity to share ideas, passions, and concerns about the world of design and multimedia. Students submit their work into the following categories: Advertising Design, Character Design, Digital Illustration, Editorial Design, Image Editing, Infographics, Motion Graphics, Time-based Design, Typographic Design, Packaging Design, Visual Identity, and UX/UI Design. All submitted work is displayed in the gallery.</p>
+            <hr style="color: #F2F2F2; height: 30px">
+            
+        </div>
+        <div class="mx-auto" style="width: 1000px">
+             <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <img src="images/2019_scholarship.ivy_.jpg" style="width: 30.5em; height: auto">
+                </div>
+                <div class="col-xl-6">
+                    <h1 class="display-6">2019 Recipients</h1>
+                    <hr style="color: #F2F2F2">
+                    <ul class="list-unstyled" style="font-size: .95em; font-weight: 600;">
+                        <li>Kamala Nahas</li>
+                        <li>Best in Show</li>
+                        <li>Typographic Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Thuy Mai Nguyen</li>
+                        <li>Character Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Carah Dorthalina</li>
+                        <li>Time-based Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Andrew Stankiewiwicz</li>
+                        <li>Packaging Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Keith Yap</li>
+                        <li>Infographics</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Ivy Lovett</li>
+                        <li>Visual Identity</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Taro Amano</li>
+                        <li>Visual Identity</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Kier Closs</li>
+                        <li>Advertising Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Dane Kubicka</li>
+                        <li>UX/UI Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li style="color: gray; font-weight: 100; font-size: 1em">MORE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <img src="images/2018.jpg" style="width: 30.5em; height: auto">
+                </div>
+                <div class="col-xl-6">
+                    <h1 class="display-6">2018 Recipients</h1>
+                    <hr style="color: #F2F2F2">
+                    <ul class="list-unstyled" style="font-size: .95em; font-weight: 600;">
+                        <li>Adriana Almeida</li>
+                        <li>Graphic Design / Multimedia</li>
+                       <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Ayrlron Arellano</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Amanda Baker</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Matheus Borges</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Clarissa Caplinger</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Michael Cisneros</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Brennan Felker</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Caesar Fox</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Tyler Hillis</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li style="color: gray; font-weight: 100; font-size: 1em">MORE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <img src="images/2017_scholarship.poster.3rd.jpg" style="width: 30.5em; height: auto">
+                </div>
+                <div class="col-xl-6">
+                    <h1 class="display-6">2017 Recipients</h1>
+                    <hr style="color: #F2F2F2">
+                    <ul class="list-unstyled" style="font-size: .95em; font-weight: 600;">
+                        <li>Josh Chambers</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Diana Chavez</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Chloe Demosthenous</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Matthew Ekvall</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Jorge Guiza</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Bernie Hammer</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Dianna Jerram</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Raufin Khan</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Ivy Lovett</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li style="color: gray; font-weight: 100; font-size: 1em">MORE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <img src="images/2016_scholarship.poster.4th.jpg" style="width: 30.5em; height: auto">
+                </div>
+                <div class="col-xl-6">
+                    <h1 class="display-6">2016 Recipients</h1>
+                    <hr style="color: #F2F2F2">
+                    <ul class="list-unstyled" style="font-size: .95em; font-weight: 600;">
+                        <li>Katherine Baraghimian</li>
+                        <li>Time Based Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Diego Buller</li>
+                        <li>Editorial Design, Excellent Body of Work Award</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Luke Chayo</li>
+                        <li>Time Based Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Jonathan Chouy</li>
+                        <li>Digital Illustration</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Shelby DeMangelaere</li>
+                        <li>Digital Illustration</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Jorge Guiza</li>
+                        <li>Poster Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Jayce Hawblitzel</li>
+                        <li>Digital Illustration</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Christopher Dean Loock</li>
+                        <li>Editorial Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Chris Louderman</li>
+                        <li>Time Based Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li style="color: gray; font-weight: 100; font-size: 1em">MORE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <img src="images/2015_scholarship.poster.april13th.jpg" style="width: 30.5em; height: auto">
+                </div>
+                <div class="col-xl-6">
+                    <h1 class="display-6">2015 Recipients</h1>
+                    <hr style="color: #F2F2F2">
+                    <ul class="list-unstyled" style="font-size: .95em; font-weight: 600;">
+                        <li>Josh Chambers</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Diana Chavez</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Chloe Demosthenous</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Matthew Ekvall</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Jorge Guiza</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Bernie Hammer</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Dianna Jerram</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Raufin Khan</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Ivy Lovett</li>
+                        <li>Graphic Design / Multimedia</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li style="color: gray; font-weight: 100; font-size: 1em">MORE</li>
+                    </ul>
+                </div>
+            </div>
+        <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <img src="images/2014.png" style="width: 30.5em; height: auto;">
+                </div>
+                <div class="col-xl-6">
+                    <h1 class="display-6">2014 Recipients</h1>
+                    <hr style="color: #F2F2F2">
+                    <ul class="list-unstyled" style="font-size: .95em; font-weight: 600;">
+                        <li>Irma Barbosa</li>
+                        <li>Packaging Design, Visual Identity</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Lovisa Boucher</li>
+                        <li>Visual Identity, Best In Show</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Trevor Davison</li>
+                        <li>Editorial Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Erin Kurosaki</li>
+                        <li>Advertising</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Alexander Olivier</li>
+                        <li>Digital Compositing</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Stephanie Otani-Sunamoto</li>
+                        <li>Typographic Design</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Samuel Redhead</li>
+                        <li>Best In Show 3</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Gina Rocco</li>
+                        <li>Best In Show 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <img src="images/2013_scholarship.poster.jpg" style="width: 30.5em; height: auto;">
+                </div>
+                <div class="col-xl-6">
+                    <h1 class="display-6">2013 Recipients</h1>
+                    <hr style="color: #F2F2F2">
+                    <ul class="list-unstyled" style="font-size: .95em; font-weight: 600;">
+                        <li>Omar Calderon</li>
+                        <li>Honorable Mention</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Kara Edwall</li>
+                        <li>Honorable Mention</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Jerry Fehlman</li>
+                        <li>Honorable Mention</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Gina Rocco</li>
+                        <li>Honorable Mention</li>
+                        <li class="unselectable" style="color: #F2F2F2">hi</li>
+                        <li>Andrew Dean Shaffner</li>
+                        <li>Honorable Mention</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class=inner_footer>
+            <img src="/images/GMDLogo.png" height=75px width=75px />
+            <p><b>Graphic & Multimedia Design</b></p>
+            <p><a href=mailto:skasalovic@vcccd.edu>Svetlana Kasalovic</a></p>
+            <br/>
+            <p><b>Moorpark College</b></p>
+            <p>Communications Building</p>
+            <p>7075 Campus Rd</p>
+            <p>Moorpark, CA 93021</p>
+            <p>(805) 378-1400</p>
+            <br>
+            <p>© 2019 Graphic & Multimedia Design</p>
+            <p>Moorpark College</p>
+        </div>
+      </footer>
+    </body>
+</html>
