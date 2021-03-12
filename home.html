@@ -1,218 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/home.css">
+    <!-- navbar CSS -->
+    <link href="/navbar.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- carousel CSS -->
+    <link href="/carousel.css" rel="stylesheet"> 
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons API -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <title>Home | Graphic and Multimedia Design</title>
-    <link rel="icon" href="http://mc-dma.com/wp-content/uploads/2018/11/favi.png">
+
+    <!-- Fontaawesome Icons API -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   </head>
   <body>
-  <!-- CSS  -->
+
+  <!-- carousel CSS -->
   <style>
-    html {
-      font-family: 'Open Sans', sans-serif;
-      color: #545454;
-    }
     body {
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      position: relative;
-    }
-    @media all and (min-width: 992px) {
-      .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
-      .navbar .nav-item:hover .nav-link{ color: #fff;  }
-      .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
-      .navbar .dropdown-menu.fade-up{ top:180%;  }
-      .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+      background: #f2f2f2;
+      color: #545454;
     }
     .max-width-95rem {
         max-width: 95rem;
-    }
-    .navbar-custom {
-      background-color: #f2f2f2;
-      box-shadow: 0 0 3px rgb(0 0 0 / 20%);
-      font-family: 'Open Sans', sans-serif;
-      padding: 0.25rem 2% 0.25rem 2%;
-    }
-    .title-text {
-      color: #545454;
-      font-size: 19.5px;
-      font-weight: 500;
-      overflow: hidden;
-      background: linear-gradient(to right, #4FBBEC, #4FBBEC 50%, #545454 50%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 200% 100%;
-      background-position: 100%;
-      transition: background-position 1500ms ease;
-      text-decoration: none;
-      margin: 0;
-    }
-    .title-text:hover {
-      background-position: -100% 100%;
-    }
-    .nav-item {
-      transition: background-color .5s ease;
-    }
-    .nav-item:hover {
-      background-color: #545454;
-      color: #f2f2f2;
-    }
-    .navbar-nav > .active {
-      background-color: #545454;
-      color: #f2f2f2;
-    }
-    .brand-container {
-      display: flex;
     }
     .carousel-indicators li {
       width: 10px;
       height: 10px;
       border-radius: 100%;
     }
-    .mp-college {
-      color: #545454;
-      padding: 0;
-      margin: 0;
-      font-weight: 300;
-      transition: none;
-      font-size: 0.9em !important;
-    }
-    .title {
-      font-size: 19.5px;
-      margin-left: 1em;
-      letter-spacing: 1px;
-      padding-top: 4px;
-    }
-    .nav-link {
-      color: #545454;
-      font-size: 0.8rem;
-      font-weight: 400;
-      letter-spacing: 1px;
-    }
-    .dropdown-menu {
-      border-radius: 0;
-    }
-    .dropdown-item {
-      color: #545454;
-      font-size: 0.75rem;
-      font-weight: 400;
-    }
-    .dropdown-menu-right {
-      background-color: #545454 !important;
-      border-radius: 0;
-    }
-    .form-control {
-      background-color: #545454 !important;
-      color: #f2f2f2 !important;
-      border: none;
-      font-weight: 300;
-      font-size: 14px;
-    }
-    .form-control:focus{
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      font-size: 14px;
-      font-weight: 300;
-    }
-    .search-dropdown:after {
-      content: none;
-    }
-    footer{
-      font-family: Open Sans;
-      margin: 0;
-      width: 100%;
-      font-size: .9em;
-      text-align: center;
-      background: lightgray;
-      bottom: 0;
-      display: flex;
-      justify-content: center;
-    }
-    footer p{
-        margin: 0;
-        padding: 0;
-    }
-    footer a{
-        text-decoration: none;
-    }
-    .inner_footer{
-        padding: 2em;
-    }
   </style>
-  <!--  END CSS  -->
 
   <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-custom">
-      <a class="navbar-brand" href="/home.html">
-        <div class="brand-container">
-          <img src="http://mc-dma.com/wp-content/uploads/2018/11/cropped-GMDlogo-1.png" alt="" width="61" height="60">
-          <div class="title">
-            <h1 class="title-text">GRAPHIC AND MULTIMEDIA DESIGN <br /></h1>
-            <p class="mp-college">Moorpark College</p>
-          </div>
+  <nav class="navbar navbar-expand-md navbar-custom">
+    <a class="navbar-brand" href="/home.html">
+      <div class="brand-container">
+        <img src="/images/GMDLogo.png" alt="" width="61" height="60">
+        <div class="title">
+          <h1 class="title-text">GRAPHIC AND MULTIMEDIA DESIGN <br /></h1>
+          <p class="mp-college">Moorpark College</p>
         </div>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="#">GALLERY<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PROGRAMS </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">DEGREES & CERTIFICATES</a></li>
-                    <li><a class="dropdown-item" href="#">COURSE DESCRIPTIONS</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">RESOURCES </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/scholarships.html">SCHOLARSHIPS</a></li>
-                    <li><a class="dropdown-item" href="/lab_hours.html">LAB HOURS</a></li>
-                    <li><a class="dropdown-item" href="/links.html">LINKS</a></li>
-                    <li><a class="dropdown-item" href="#">SUGGESTED BOOKS</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ALUMNI</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/about.html">ABOUT</a>
-              </li>
-              <div class="nav-item dropdown search-dropdown">
-                <a data-toggle="dropdown" class="nav-item nav-link" href="#"><i class="bi bi-search" style="font-size: 7px;"></i></a>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <div>
-                    <form>
-                      <div class="input-group search-box">								
-                          <input type="text" id="search" class="form-control" placeholder="Search" style="width: 250px;">
-                      </div>
-                    </form>                        
-                  </div>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">GALLERY<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PROGRAMS </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">DEGREES & CERTIFICATES</a></li>
+                  <li><a class="dropdown-item" href="#">COURSE DESCRIPTIONS</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">RESOURCES </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/scholarships.html">SCHOLARSHIPS</a></li>
+                  <li><a class="dropdown-item" href="/lab_hours.html">LAB HOURS</a></li>
+                  <li><a class="dropdown-item" href="/links.html">LINKS</a></li>
+                  <li><a class="dropdown-item" href="#">SUGGESTED BOOKS</a>
+                    <ul class="submenu dropdown-menu">
+                        <li><a class="dropdown-item" href="">HISTORY</a></li>
+                        <li><a class="dropdown-item" href="">MONOGRAPHS</a></li>
+                        <li><a class="dropdown-item" href="">DESIGN BASICS</a>
+                        <li><a class="dropdown-item" href="">VISUAL PERCEPTION</a></li>
+                        <li><a class="dropdown-item" href="">CREATIVITY & PROBLEM SOLVING</a></li>
+                        <li><a class="dropdown-item" href="">PRODUCTION</a></li>
+                        <li><a class="dropdown-item" href="">GRAPHIC DESIGN</a></li>
+                        <li><a class="dropdown-item" href="">TYPOGRAPHY</a></li>
+                        <li><a class="dropdown-item" href="">PUBLICATION DESIGN</a>  
+                        <li><a class="dropdown-item" href="">CORPORATE IDENTITY</a>
+                        <li><a class="dropdown-item" href="">TRADEMARKS & SYMBOLS</a></li>
+                        <li><a class="dropdown-item" href="">INFORMATION DESIGN</a></li>
+                        <li><a class="dropdown-item" href="">MULTIMEDIA</a></li>
+                        <li><a class="dropdown-item" href="">ADVERTISING & MARKETING</a></li>
+                        <li><a class="dropdown-item" href="">WRITING</a></li>
+                        <li><a class="dropdown-item" href="">BUSINESS & PORTFOLIO</a>                             
+                    </ul>
+                 </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ALUMNI</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about.html">ABOUT</a>
+            </li>
+            <div class="nav-item dropdown search-dropdown">
+              <a data-toggle="dropdown" class="nav-item nav-link" href="#"><i class="bi bi-search" style="font-size: 7px;"></i></a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <div>
+                  <form>
+                    <div class="input-group search-box">								
+                        <input type="text" id="search" class="form-control" placeholder="Search" style="width: 250px;">
+                    </div>
+                  </form>                        
                 </div>
               </div>
-              <li>
-                <a data-toggle="dropdown" class="nav-item nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-          </ul>
-      </div>
-    </nav>
+            </div>
+            <li>
+              <a data-toggle="dropdown" class="nav-item nav-link" href="https://www.facebook.com/mcdma/"><i class="fab fa-facebook-f"></i></a>
+            </li>
+        </ul>
+    </div>
+  </nav>
 <!-- END NAVBAR -->
 
 <!-- CAROUSEL -->
@@ -233,34 +141,34 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="http://mc-dma.com/wp-content/uploads/2018/12/10.jpg" alt="First slide">
+              <img class="d-block w-100" src="/images/carousel-imgs/1.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="http://mc-dma.com/wp-content/uploads/2018/12/8.jpg" alt="Second slide">
+              <img class="d-block w-100" src="/images/carousel-imgs/2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="http://mc-dma.com/wp-content/uploads/2018/12/6.jpg" alt="Third slide">
+              <img class="d-block w-100" src="/images/carousel-imgs/3.jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="http://mc-dma.com/wp-content/uploads/2018/12/4.jpg" alt="Fourth slide">
+              <img class="d-block w-100" src="/images/carousel-imgs/4.jpg" alt="Fourth slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="http://mc-dma.com/wp-content/uploads/2018/12/3.jpg" alt="Fifth slide">
+              <img class="d-block w-100" src="/images/carousel-imgs/5.jpg" alt="Fifth slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="http://mc-dma.com/wp-content/uploads/2018/12/1.jpg" alt="Sixth slide">
+              <img class="d-block w-100" src="/images/carousel-imgs/6.jpg" alt="Sixth slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="http://mc-dma.com/wp-content/uploads/2018/12/5.jpg" alt="Seventh slide">
+              <img class="d-block w-100" src="/images/carousel-imgs/7.jpg" alt="Seventh slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="http://mc-dma.com/wp-content/uploads/2018/12/9.jpg" alt="Eighth slide">
+              <img class="d-block w-100" src="/images/carousel-imgs/8.jpg" alt="Eighth slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="http://mc-dma.com/wp-content/uploads/2018/12/7.jpg" alt="Ninth slide">
+              <img class="d-block w-100" src="/images/carousel-imgs/9.jpg" alt="Ninth slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="http://mc-dma.com/wp-content/uploads/2018/12/2.jpg" alt="Tenth slide">
+              <img class="d-block w-100" src="/images/carousel-imgs/10.jpg" alt="Tenth slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -276,24 +184,23 @@
     </center>
 <!-- END CAROUSEL -->
 
-<footer>
-  <div class=inner_footer>
-      <img src="/images/GMDLogo.png" height=75px width=75px />
-      <p><b>Graphic & Multimedia Design</b></p>
-      <p><a href=mailto:skasalovic@vcccd.edu>Svetlana Kasalovic</a></p>
-      <br/>
-      <p><b>Moorpark College</b></p>
-      <p>Communications Building</p>
-      <p>7075 Campus Rd</p>
-      <p>Moorpark, CA 93021</p>
-      <p>(805) 378-1400</p>
-      <br>
-      <p>© 2019 Graphic & Multimedia Design</p>
-      <p>Moorpark College</p>
-  </div>
-</footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <footer>
+    <div class=inner_footer>
+        <img src="/images/GMDLogo.png" height=75px width=75px />
+        <p><b>Graphic & Multimedia Design</b></p>
+        <p><a href=mailto:skasalovic@vcccd.edu>Svetlana Kasalovic</a></p>
+        <br/>
+        <p><b>Moorpark College</b></p>
+        <p>Communications Building</p>
+        <p>7075 Campus Rd</p>
+        <p>Moorpark, CA 93021</p>
+        <p>(805) 378-1400</p>
+        <br>
+        <p>© 2019 Graphic & Multimedia Design</p>
+        <p>Moorpark College</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
