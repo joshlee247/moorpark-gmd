@@ -1,0 +1,12 @@
+body {
+  background: #f2f2f2;
+  color: #545454;
+}
+.max-width-95rem {
+    max-width: 95rem;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
