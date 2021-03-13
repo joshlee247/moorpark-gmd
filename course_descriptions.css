@@ -1,0 +1,22 @@
+.inner-article
+{
+  margin-top:5%;
+}
+.content
+{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.content p
+{
+  line-height: 1.8;
+  color: #545454;
+  text-align:left;
+  font-size:15px;
+  font-weight:400;
+}
+.content a:hover
+{
+  text-decoration: none;
+}
