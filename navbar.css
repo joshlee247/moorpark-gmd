@@ -72,8 +72,8 @@
     color: #f2f2f2;
 }
 .dropdown-menu > li > a {
-      padding: 10px;
-      padding-left: 20px;
+    padding: 12px;
+    padding-left: 20px;
 }
 .brand-container {
     display: flex;
@@ -107,18 +107,27 @@
     letter-spacing: 1px;
 }
 .dropdown-menu {
+    border-top-color: #545454;
+    background-color: #f2f2f2;
+    color: #545454;
     border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .dropdown-item {
     color: #545454;
     font-size: 0.75rem;
     font-weight: 400;
 }
+.dropdown-item:hover {
+    background-color: #dcdcdc;
+}
 .dropdown-menu-right {
     background-color: #545454 !important;
     border-radius: 0;
 }
 .form-control {
+    padding: 5% 5% 5% 5%;
     background-color: #545454 !important;
     color: #f2f2f2 !important;
     border: none !important;
