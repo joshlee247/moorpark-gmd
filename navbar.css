@@ -13,6 +13,9 @@
     #suggested_books_button:hover #suggested_books_list{
         opacity: 1;
     }
+    #suggested_books_list{
+        top: 0;
+    }
 	.dropdown-menu .dropdown-toggle:after{
 		border-top: .3em solid transparent;
 	    border-right: 0;
