@@ -1,7 +1,18 @@
 body {
   background: #f2f2f2;
   color: #545454;
+  text-rendering: optimizeLegibility;
 }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  color: #545454;
+}
+
 .max-width-95rem {
     max-width: 95rem;
 }
@@ -9,4 +20,73 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 100%;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.header {
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.header2 {
+  text-align: center;
+  padding-top: 350px;
+}
+
+#programs, .workPhotos {
+  text-align: center;
+  width: 100%;
+}
+
+.workPhotos {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#programText, #programText2 {
+  line-height: 1.8;
+  font-weight: normal;
+}
+
+.programIcon {
+  float: left;
+  width: 50%;
+}
+
+.iconG {
+  padding-left: 15%;
+  padding-right: 5%;
+}
+
+.iconM {
+  padding-right: 15%;
+  padding-left: 5%;
+}
+
+.home-image {
+  float:left;
+  width: 33%;
+  padding: 0px;
+}
+
+.item-1, .item-2, .item-3 {
+  width: 100%;
+  height: 300px;
+  padding:0px;
+}
+
+.borderedButton {
+  border: #07ACE4 2px solid;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto;
+  display: block;
+  width: 15%;
+  font-weight: 900;
 }
