@@ -1,10 +1,10 @@
 /* format the navbar */
 @media all and (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu{ display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0; top: -7px; border-radius: 0;}
+    .navbar .nav-item .dropdown-menu{ z-index: -1; display:block; opacity: 0;  visibility: hidden; transition:.5s; margin-top:0; top: -7px; border-radius: 0;}
     .navbar .nav-item:hover .nav-link{ color: #fff;  }
     .navbar .dropdown-menu .fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
     .navbar .dropdown-menu .fade-up{ top: 180%; }
-    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+    .navbar .nav-item:hover .dropdown-menu{ transition: .5s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
 }
 @media (min-width: 992px){
     .dropdown:hover #suggested_books_list{
