@@ -7,6 +7,12 @@
     .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
 }
 @media (min-width: 992px){
+    .dropdown:hover #suggested_books_list{
+        opacity: 0;
+    }
+    #suggested_books_button:hover #suggested_books_list{
+        opacity: 1;
+    }
 	.dropdown-menu .dropdown-toggle:after{
 		border-top: .3em solid transparent;
 	    border-right: 0;
