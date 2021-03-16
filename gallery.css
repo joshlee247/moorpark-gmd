@@ -1,0 +1,102 @@
+.gallery {
+  display: grid;
+  grid-gap: 0px;
+  padding-left: 21em;
+  grid-template-columns: 18em auto 1fr;
+}
+
+.gallery img {
+  width: 18em;
+  display: block
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 200%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.right-middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 95%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.hover-author {
+  color: white;
+  font-size: 16px;
+  position: relative;
+  top: 74.9%;
+  left: 50%;
+  padding-left: 15%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.hover-title {
+  color: white;
+  font-size: 16px;
+  position: relative;
+  top: 75%;
+  left: 50%;
+  padding-left: 15%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.img-hover {
+  position: relative;
+  width: 50%;
+}
+
+.img-hover:hover .image {
+  opacity: 0.3;
+}
+
+.img-hover:hover .middle {
+  opacity: 0.7;
+}
+
+.img-hover:hover .right-middle {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 719px) {
+    .gallery img {
+        width: 100%;
+        padding-left: 0px;
+        grid-template-columns: auto;
+    }
+    
+    .gallery {
+        width: 100%;
+    }
+}
+
+

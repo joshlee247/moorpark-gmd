@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kamala Nahas - Robert Johnson: The Centennial Collection</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- main CSS -->
+    <link href="../main.css" rel="stylesheet">
+
+    <!-- navbar CSS -->
+    <link href="../navbar.css" rel="stylesheet">
+
+    <!-- gallery page CSS -->
+    <link href="../gallery.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons API -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <!-- Fontaawesome Icons API -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+    
+<style>
+    .image-portfolio {
+        width: 55em; 
+        height: auto; 
+        margin-bottom: 0.5em
+    }
+    @media only screen and (max-width: 576px) {
+        .image-portfolio {
+            width: 100%;
+            height: auto;
+        }
+    }    
+</style>
+    
+<body>
+<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-custom">
+        <a class="navbar-brand" href="./home.html">
+            <div class="brand-container">
+                <img src="./images/GMDLogo.png" alt="" width="61" height="60">
+                <div class="title">
+                    <h1 class="title-text">GRAPHIC AND MULTIMEDIA DESIGN <br /></h1>
+                    <p class="mp-college">Moorpark College</p>
+                </div>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GALLERY<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PROGRAMS </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">DEGREES & CERTIFICATES</a></li>
+                        <li><a class="dropdown-item" href="#">COURSE DESCRIPTIONS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">RESOURCES </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./scholarships.html">SCHOLARSHIPS</a></li>
+                        <li><a class="dropdown-item" href="./lab_hours.html">LAB HOURS</a></li>
+                        <li><a class="dropdown-item" href="./links.html">LINKS</a></li>
+                        <li><a class="dropdown-item" href="#">SUGGESTED BOOKS</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="">HISTORY</a></li>
+                                <li><a class="dropdown-item" href="">MONOGRAPHS</a></li>
+                                <li><a class="dropdown-item" href="">DESIGN BASICS</a>
+                                <li><a class="dropdown-item" href="">VISUAL PERCEPTION</a></li>
+                                <li><a class="dropdown-item" href="">CREATIVITY & PROBLEM SOLVING</a></li>
+                                <li><a class="dropdown-item" href="">PRODUCTION</a></li>
+                                <li><a class="dropdown-item" href="">GRAPHIC DESIGN</a></li>
+                                <li><a class="dropdown-item" href="">TYPOGRAPHY</a></li>
+                                <li><a class="dropdown-item" href="">PUBLICATION DESIGN</a>
+                                <li><a class="dropdown-item" href="">CORPORATE IDENTITY</a>
+                                <li><a class="dropdown-item" href="">TRADEMARKS & SYMBOLS</a></li>
+                                <li><a class="dropdown-item" href="">INFORMATION DESIGN</a></li>
+                                <li><a class="dropdown-item" href="">MULTIMEDIA</a></li>
+                                <li><a class="dropdown-item" href="">ADVERTISING & MARKETING</a></li>
+                                <li><a class="dropdown-item" href="">WRITING</a></li>
+                                <li><a class="dropdown-item" href="">BUSINESS & PORTFOLIO</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ALUMNI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">ABOUT</a>
+                </li>
+                <div class="nav-item dropdown search-dropdown">
+                    <a data-toggle="dropdown" class="nav-item nav-link" href="#"><i class="bi bi-search" style="font-size: 7px;"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div>
+                            <form>
+                                <div class="input-group search-box">
+                                    <input type="text" id="search" class="form-control" placeholder="Search" style="width: 250px;">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <li>
+                    <a data-toggle="dropdown" class="nav-item nav-link" href="https://www.facebook.com/mcdma/"><i class="fab fa-facebook-f"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <div class="container">
+        <br style="color: #F2F2F2">
+        <img src="../images/gallery/subpages/kamalarobertjohnson1.jpg" class="image-portfolio">
+        <img src="../images/gallery/subpages/kamalarobertjohnson2.jpg" class="image-portfolio">
+        <img src="../images/gallery/subpages/kamalarobertjohnson3.jpg" class="image-portfolio">
+        <p style="margin-bottom: -0.2em">Kamala Nahas</p>
+        <h1 style="font-size: 1.25em; font-weight: 600">Robert Johnson - The Centennial Collection</h1>
+        <br style="color: #F2F2F2">
+        <p style="font-weight: 600; margin-bottom: -0.35em">Instructor</p>
+        <p style="margin-bottom: -0.35em">Susan Gardner</p>
+        <p>Svetlana Kasalovic</p>
+        <p style="font-weight: 600; margin-bottom: -0.35em">Discipline</p>
+        <p >Package Design</p>
+        <p style="font-weight: 600; margin-bottom: -0.35em">Class Name</p>
+        <p>Design II</p>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class=inner_footer>
+            <img src="./images/GMDLogo.png" height=75px width=75px />
+            <p><b>Graphic & Multimedia Design</b></p>
+            <p><a href=mailto:skasalovic@vcccd.edu>Svetlana Kasalovic</a></p>
+            <br />
+            <p><b>Moorpark College</b></p>
+            <p>Communications Building</p>
+            <p>7075 Campus Rd</p>
+            <p>Moorpark, CA 93021</p>
+            <p>(805) 378-1400</p>
+            <br>
+            <p>© 2019 Graphic & Multimedia Design</p>
+            <p>Moorpark College</p>
+        </div>
+    </footer>
+</body>
+</html>

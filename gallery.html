@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- main CSS -->
+    <link href="./main.css" rel="stylesheet">
+
+    <!-- navbar CSS -->
+    <link href="./navbar.css" rel="stylesheet">
+
+    <!-- gallery page CSS -->
+    <link href="gallery.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons API -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <!-- Fontaawesome Icons API -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-custom">
+        <a class="navbar-brand" href="./home.html">
+            <div class="brand-container">
+                <img src="./images/GMDLogo.png" alt="" width="61" height="60">
+                <div class="title">
+                    <h1 class="title-text">GRAPHIC AND MULTIMEDIA DESIGN <br /></h1>
+                    <p class="mp-college">Moorpark College</p>
+                </div>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GALLERY<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">PROGRAMS </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">DEGREES & CERTIFICATES</a></li>
+                        <li><a class="dropdown-item" href="#">COURSE DESCRIPTIONS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">RESOURCES </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./scholarships.html">SCHOLARSHIPS</a></li>
+                        <li><a class="dropdown-item" href="./lab_hours.html">LAB HOURS</a></li>
+                        <li><a class="dropdown-item" href="./links.html">LINKS</a></li>
+                        <li><a class="dropdown-item" href="#">SUGGESTED BOOKS</a>
+                            <ul class="submenu dropdown-menu">
+                                <li><a class="dropdown-item" href="">HISTORY</a></li>
+                                <li><a class="dropdown-item" href="">MONOGRAPHS</a></li>
+                                <li><a class="dropdown-item" href="">DESIGN BASICS</a>
+                                <li><a class="dropdown-item" href="">VISUAL PERCEPTION</a></li>
+                                <li><a class="dropdown-item" href="">CREATIVITY & PROBLEM SOLVING</a></li>
+                                <li><a class="dropdown-item" href="">PRODUCTION</a></li>
+                                <li><a class="dropdown-item" href="">GRAPHIC DESIGN</a></li>
+                                <li><a class="dropdown-item" href="">TYPOGRAPHY</a></li>
+                                <li><a class="dropdown-item" href="">PUBLICATION DESIGN</a>
+                                <li><a class="dropdown-item" href="">CORPORATE IDENTITY</a>
+                                <li><a class="dropdown-item" href="">TRADEMARKS & SYMBOLS</a></li>
+                                <li><a class="dropdown-item" href="">INFORMATION DESIGN</a></li>
+                                <li><a class="dropdown-item" href="">MULTIMEDIA</a></li>
+                                <li><a class="dropdown-item" href="">ADVERTISING & MARKETING</a></li>
+                                <li><a class="dropdown-item" href="">WRITING</a></li>
+                                <li><a class="dropdown-item" href="">BUSINESS & PORTFOLIO</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ALUMNI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">ABOUT</a>
+                </li>
+                <div class="nav-item dropdown search-dropdown">
+                    <a data-toggle="dropdown" class="nav-item nav-link" href="#"><i class="bi bi-search" style="font-size: 7px;"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div>
+                            <form>
+                                <div class="input-group search-box">
+                                    <input type="text" id="search" class="form-control" placeholder="Search" style="width: 250px;">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <li>
+                    <a data-toggle="dropdown" class="nav-item nav-link" href="https://www.facebook.com/mcdma/"><i class="fab fa-facebook-f"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- ACTUAL GALLERY BIT -->
+    <div class="container" style="width: 100em">
+        <div class="mx-auto" width="200em">
+            <div class="row no-gutters">
+                <div class="col-xl-6">
+                    <div class="mt-5">
+                        <h1>
+                            <center>Student Gallery</center>
+                        </h1>
+                        <br style="background-color: #F2f2F2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/kamalarobertjohnson.jpg" class="image">
+            <a href="subpages/RobertJohnson.html"><div class="middle">
+                <p class="hover-author">Kamala Nahas</p>
+                <p class="hover-title">Robert Johnson - The Centennial Collection</p>
+            </div></a>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/ponchosanchez_th.jpg" class="image">
+            <a href="subpages/PonchoSanchez.html"><div class="middle">
+                <p class="hover-author">Jorge Guiza</p>
+                <p class="hover-title">From Jazz to (Poncho) Sanchez</p>
+            </div></a>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/OtaniSunamoto-Scholarship-10_th.jpg" class="image">
+            <a href="subpages/WorldWithoutBees.html"><div class="right-middle">
+                <p class="hover-author">Stephanie Otani-Sunamoto</p>
+                <p class="hover-title">World Without Bees</p>
+            </div></a>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/OtaniSunamoto-Scholarship-1_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Stephanie Otani-Sunamoto</p>
+                <p class="hover-title">The Laughing Dead</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/metamorphosis_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Ivy Lovett</p>
+                <p class="hover-title">The Metamorphosis</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/julesverne_th.jpg" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Brennan Felker</p>
+                <p class="hover-title">Jules Verne</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/IvyLovettPosters_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Ivy Lovett</p>
+                <p class="hover-title">Makerspace</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/imageediting_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Diana Chavez</p>
+                <p class="hover-title">My Dreamscape</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/hermanmelville_th.jpg" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Mel Weiner</p>
+                <p class="hover-title">Herman Melville Volume I</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/gabo_round4_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Mel Weiner</p>
+                <p class="hover-title">Gabriel Garcia Marquez</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/ekvall_matt_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Matthew Ekvall</p>
+                <p class="hover-title">Mr. Snuggles</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/weiner_mel_02.jpg" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Mel Weiner</p>
+                <p class="hover-title">The Grandparents</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/chuckberry_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Mel Weiner</p>
+                <p class="hover-title">Chuck Berry Influences</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/sararibble_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Sarah Ribble</p>
+                <p class="hover-title">HI FRUCTOSE</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/vidthumb.png" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Rolando Rubalcava</p>
+                <p class="hover-title">Gotta' Story</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/roadblock_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Mel Weiner</p>
+                <p class="hover-title">Roadblock</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/powerstation_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Dean Loock</p>
+                <p class="hover-title">The Powerstation</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/doghouse_th.jpg" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Michael Cisneros</p>
+                <p class="hover-title">Dog House Beer</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/biggarys_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Stephanie Otani-Sunamoto</p>
+                <p class="hover-title">Big Gary's Fish And Chips</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/munchbox_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Gina Rocco</p>
+                <p class="hover-title">Munchbox Cereal</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/homer_th.jpg" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Alon Weinberg</p>
+                <p class="hover-title">Books By Homer</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/fishoutofwater_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Jonathon Chouy</p>
+                <p class="hover-title">Fish Out of Water Restaurant</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/dystopicnovel_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Diego Buller</p>
+                <p class="hover-title">Dystopic Novels</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/monsterbookcover_th.jpg" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Lovisa Boucher</p>
+                <p class="hover-title">Monster Novels</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/koreanfolktales_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Jung Seo</p>
+                <p class="hover-title">Korean Folk Tales</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/F16_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Diego Buller</p>
+                <p class="hover-title">F16 Magazine</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/mythandreality_th.jpg" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Stephanie Otani-Sunamoto</p>
+                <p class="hover-title">Elyn Saks: Living with Schizophrenia</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/01-14.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Jullie Keller</p>
+                <p class="hover-title">My Daughter</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/01-11.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Bradley Krebs</p>
+                <p class="hover-title">Greek Magazine</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/movieposters_th.jpg" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Ethan Persico</p>
+                <p class="hover-title">Science Fiction Movies</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/weinersdeli_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Mel Weiner</p>
+                <p class="hover-title">Weiner's Deli</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/NYShelbyDemangelaere_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Shelby Demangelaere</p>
+                <p class="hover-title">The New Yorker Covers</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/NYShaunBerke_th.jpg" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Shaun Berke</p>
+                <p class="hover-title">The New Yorker Cover</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/demoreel_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Josh Zerhusen</p>
+                <p class="hover-title">Demo Real</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/thelastwild_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Dawn Glover</p>
+                <p class="hover-title">The Last Wild</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/Gerardo.png" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Gerardo Hernandez</p>
+                <p class="hover-title">Colors In Motion</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="img-hover">
+            <img src="images/gallery/small/Recycling_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Victoria Marble</p>
+                <p class="hover-title">Recycling</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/Secure_th.jpg" class="image">
+            <div class="middle">
+                <p class="hover-author">Sawyer Phillips</p>
+                <p class="hover-title">Secure</p>
+            </div>
+        </div>
+        <div class="img-hover">
+            <img src="images/gallery/small/tildemoThumbnail.jpg" class="image">
+            <div class="right-middle">
+                <p class="hover-author">Sawyer Phillips</p>
+                <p class="hover-title">Tildemo</p>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class=inner_footer>
+            <img src="./images/GMDLogo.png" height=75px width=75px />
+            <p><b>Graphic & Multimedia Design</b></p>
+            <p><a href=mailto:skasalovic@vcccd.edu>Svetlana Kasalovic</a></p>
+            <br />
+            <p><b>Moorpark College</b></p>
+            <p>Communications Building</p>
+            <p>7075 Campus Rd</p>
+            <p>Moorpark, CA 93021</p>
+            <p>(805) 378-1400</p>
+            <br>
+            <p>© 2019 Graphic & Multimedia Design</p>
+            <p>Moorpark College</p>
+        </div>
+    </footer>
+</body>
+
+</html>

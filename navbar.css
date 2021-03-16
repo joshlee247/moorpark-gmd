@@ -7,12 +7,6 @@
     .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
 }
 @media (min-width: 992px){
-    .dropdown:hover #suggested_books_list{
-        opacity: 0;
-    }
-    #suggested_books_button:hover #suggested_books_list{
-        opacity: 1;
-    }
 	.dropdown-menu .dropdown-toggle:after{
 		border-top: .3em solid transparent;
 	    border-right: 0;
@@ -45,7 +39,7 @@
     background-color: #f2f2f2;
     box-shadow: 0 0 3px rgb(0 0 0 / 20%);
     font-family: 'Open Sans', sans-serif;
-    padding: 0 2% 0 2% !important;
+    padding: 0.25rem 2% 0.25rem 2% !important;
 }
 .title-text {
     color: #545454;
@@ -67,7 +61,6 @@
 }
 .nav-item {
     transition: background-color .5s ease;
-    padding: 3.5% 5px 3.5% 5px !important;
 }
 .nav-item:hover {
     background-color: #545454;
@@ -78,14 +71,11 @@
     color: #f2f2f2;
 }
 .dropdown-menu > li > a {
-    padding: 12px;
-    padding-left: 20px;
+      padding: 10px;
+      padding-left: 20px;
 }
 .brand-container {
     display: flex;
-}
-.navbar-brand {
-    padding: 0;
 }
 .carousel-indicators li {
     width: 10px;
@@ -113,27 +103,18 @@
     letter-spacing: 1px;
 }
 .dropdown-menu {
-    border-top-color: #545454;
-    background-color: #f2f2f2;
-    color: #545454;
     border-radius: 0;
-    padding-top: 0;
-    padding-bottom: 0;
 }
 .dropdown-item {
     color: #545454;
     font-size: 0.75rem;
     font-weight: 400;
 }
-.dropdown-item:hover {
-    background-color: #dcdcdc;
-}
 .dropdown-menu-right {
     background-color: #545454 !important;
     border-radius: 0;
 }
 .form-control {
-    padding: 5% 5% 5% 5%;
     background-color: #545454 !important;
     color: #f2f2f2 !important;
     border: none !important;
@@ -146,16 +127,8 @@
     font-size: 14px !important;
     font-weight: 300 !important;
 }
-.search-dropdown {
-    padding: 5% 1% 5% 1%;
-}
 .search-dropdown:after {
     content: none;
-}
-.submenu {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 /* Format the footer */
@@ -179,4 +152,3 @@ footer a{
 }
 .inner_footer{
     padding: 2em;
-}
