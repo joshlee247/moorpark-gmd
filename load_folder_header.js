@@ -1,1 +1,1 @@
-$.get('../folder_header.html', data => $('nav').replaceWith(data));
+$.get('../header.html', data => $('nav').replaceWith(data.replaceAll(/"\.\//g, '"..\/')));
