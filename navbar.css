@@ -1,4 +1,9 @@
 /* format the navbar */
+@media screen and (max-width: 992px) {
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  }
 @media all and (min-width: 992px) {
     .navbar .nav-item .dropdown-menu{ display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0; top: -7px; border-radius: 0;}
     .navbar .nav-item:hover .nav-link{ color: #fff;  }
@@ -41,16 +46,16 @@
         left:auto;
 	}
 }
-.max-width-95rem {
-    max-width: 95rem;
-}
-.navbar-custom {
+.navbar {
     background-color: #f2f2f2;
     box-shadow: 0 0 3px rgb(0 0 0 / 20%);
     font-family: 'Open Sans', sans-serif;
-    padding: 0 2% 0 2% !important;
+    padding: 0.2rem 2% 0.2rem 2% !important;
 }
-.title-text {
+.max-width-95rem {
+    max-width: 95rem;
+}
+#title-text {
     color: #545454;
     font-size: 19.5px;
     font-weight: 500;
@@ -65,7 +70,7 @@
     text-decoration: none;
     margin: 0;
 }
-.title-text:hover {
+#title-text:hover {
     background-position: -100% 100%;
 }
 .nav-item {
@@ -96,13 +101,14 @@
     height: 10px;
     border-radius: 100%;
 }
-.mp-college {
+#mp-college {
     color: #545454;
     padding: 0;
     margin: 0;
     font-weight: 100;
     transition: none;
     font-size: 0.9em !important;
+    white-space: nowrap;
 }
 .title {
     font-size: 19.5px;
