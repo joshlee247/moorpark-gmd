@@ -29,13 +29,11 @@
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-        <!-- Header and Footer js -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-        <script src="../load_folder_header.js" type="text/javascript" defer></script>
-        <script src="../load_folder_footer.js" type="text/javascript" defer></script>
+        <!-- include_html js -->
+        <script src="../include_html.js" type="text/javascript" defer></script>
     </head>
     <body>
-    <nav></nav>
+    <nav include-html='../folder_header.html'></nav>
         <div class="content_container">
             <b>Signs and Symbols: Their Design and Meaning</b>
             <p>by Adrian Frutiger, Andrew Bluhm</p>
@@ -48,6 +46,6 @@
             <p>ISBN: 0714838381</p>
             <p>This book examines trademarks and their meaning and history in heraldry, potter’s marks, monograms. It is essential visual reference for designers.</p>
         </div>
-        <footer></footer>
+        <footer include-html='../folder_footer.html'></footer>
     </body>
 </html>

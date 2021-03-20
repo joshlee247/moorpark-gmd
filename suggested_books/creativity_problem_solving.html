@@ -29,13 +29,11 @@
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-        <!-- Header and Footer js -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-        <script src="../load_folder_header.js" type="text/javascript" defer></script>
-        <script src="../load_folder_footer.js" type="text/javascript" defer></script>
+        <!-- include_html js -->
+        <script src="../include_html.js" type="text/javascript" defer></script>
     </head>
     <body>
-    <nav></nav>
+    <nav include-html='../folder_header.html'></nav>
         <div class="content_container">
             <b>Conceptual Blockbusting: A Guide to Better Ideas</b>
             <p>by James L. Adams</p>
@@ -53,6 +51,6 @@
             <p>ISBN: 158180055X</p>
             <p>Oldach’s book is about the process, not the product. “Designers have a responsebility to do what they are paid to – design …. To many designers use the their computers for a substitute for thinking”</p>
         </div>
-        <footer></footer>
+        <footer include-html='../folder_footer.html'></footer>
 </body>
 </html>
