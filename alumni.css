@@ -1,17 +1,8 @@
-body {
+body 
+{
     background: #f2f2f2;
     color: #545454;
     text-rendering: optimizeLegibility;
-  }
-  
-
-.header 
-{
-    text-align: center;
-    margin-top: 1.4em;
-    line-height: 1.8;
-    font-size: 2.6em;
-    font-weight: 300;
 }
 
 #programText, #programText2
@@ -21,29 +12,27 @@ body {
     line-height: 1.8;
 }
 
+#header
+{
+    text-align: center;
+    margin-top: .4em;
+    line-height: 1.8;
+    font-size: 2.6em;
+    font-weight: 300;
+}
+
 #programText
 {
     text-align: center;
-    margin-left: 22%;
-    margin-right: 22%;
-}
-
-#programText2
-{
-    text-align: left;
-}
-
-#programs_subheader
-{
-    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 3.2%;
 }
 
 .alumPic
 {
     width: 300px;
     height: 300px;
-    float: left;
-    margin-right: 50px;
     padding-top: 6px;
 }
 
@@ -64,15 +53,93 @@ body {
 {
     color: #03aeee;
     font-size: 1.1em;
+    text-align: center;
 }
+
 
 #alum1, #alum2, #alum3, #alum4, #alum5, #alum6, #alum7, #alum8
 {
     padding-top: 10px;
 }
 
-a:link{
-    text-decoration: none;
+@media only screen and (max-width: 767px)
+{
+    #header
+    {
+        line-height: 1.3;
+    }
+
+    .profiles
+    {
+        margin:0;
+    }
+
+    .image-container
+    {
+       text-align: center;
+       padding: 0;
+    }
+
+    .alumInfo
+    {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #programText
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #programText2
+    {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
 }
 
+@media only screen and (min-width: 768px)
+{
+    .container
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
+    .row 
+    {
+        display: block;
+        overflow: hidden;
+    }
+
+    .alumPic
+    {
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin-right: 50px;
+        padding-top: 6px;
+    }
+
+    .alumInfo
+    {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .profiles 
+    {
+        margin-top: 40px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px)
+{
+    #programs_subheader
+    {
+        padding-top: 10px;
+    }
+}
