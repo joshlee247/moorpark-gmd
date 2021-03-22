@@ -28,87 +28,12 @@
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+        <!-- include_html js -->
+        <script src="../include_html.js" type="text/javascript" defer></script>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../home.html">
-            <div class="brand-container">
-              <img class="image-responsive" src="../images/GMDLogo.png" alt="logo" width="61" height="60">
-              <div class="title">
-                  <h1 class="d-lg-block d-none" id="title-text">GRAPHIC AND MULTIMEDIA DESIGN</h1>
-                  <p class="d-lg-block d-none" id="mp-college">Moorpark College</p>
-              </div>
-            </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../gallery.html">GALLERY</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROGRAMS </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../degrees_certificates.html">DEGREES & CERTIFICATES</a></li>
-                        <li><a class="dropdown-item" href="../course_descriptions.html">COURSE DESCRIPTIONS</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">RESOURCES </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../scholarships.html">SCHOLARSHIPS</a></li>
-                        <li><a class="dropdown-item" href="../lab_hours.html">LAB HOURS</a></li>
-                        <li><a class="dropdown-item" href="../links.html">LINKS</a></li>
-                        <li id="suggested_books_button"><a class="dropdown-item" href="../suggested_books.html">SUGGESTED BOOKS</a>
-                            <ul class="submenu dropdown-menu" id="suggested_books_list">
-                            <li><a class="dropdown-item" href="../suggested_books/history.html">HISTORY</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/monographs.html">MONOGRAPHS</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/design_basics.html">DESIGN BASICS</a>
-                            <li><a class="dropdown-item" href="../suggested_books/visual_perception.html">VISUAL PERCEPTION</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/creativity_problem_solving.html">CREATIVITY & PROBLEM SOL...</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/production.html">PRODUCTION</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/graphic_design.html">GRAPHIC DESIGN</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/typography.html">TYPOGRAPHY</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/publication_design.html">PUBLICATION DESIGN</a>  
-                            <li><a class="dropdown-item" href="../suggested_books/corporate_identity.html">CORPORATE IDENTITY</a>
-                            <li><a class="dropdown-item" href="../suggested_books/trademarks_symbols.html">TRADEMARKS & SYMBOLS</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/information_design.html">INFORMATION DESIGN</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/multimedia.html">MULTIMEDIA</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/advertising_marketing.html">ADVERTISING & MARKETING</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/writing.html">WRITING</a></li>
-                            <li><a class="dropdown-item" href="../suggested_books/business_portfolio.html">BUSINESS & PORTFOLIO</a>                             
-                        </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../alumni.html">ALUMNI</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../about.html">ABOUT</a>
-                </li>
-                <div class="nav-item dropdown search-dropdown">
-                    <a data-toggle="dropdown" class="nav-link"><i class="bi bi-search" style="font-size: 7px;"></i></a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                    <div>
-                        <form>
-                        <div class="input-group search-box">								
-                            <input type="text" id="search" class="form-control" placeholder="Search" style="width: 250px;">
-                        </div>
-                        </form>                        
-                    </div>
-                    </div>
-                </div>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/mcdma/"><i class="fab fa-facebook-f"></i></a>
-                </li>
-            </ul>
-        </div>
-      </div>
-    </nav>
+    <nav include-html='../folder_header.html'></nav>
         <div class="content_container">
             <b>Getting it Right in Print: Digital Prepress for Graphic Designers</b>
             <p>by Mark Gatter</p>
@@ -131,21 +56,6 @@
             <p>ISBN: 1581802366</p>
             <p>A resource for generating color schemes/combinations quickly and easily.</p>
         </div>
-        <footer>
-            <div class=inner_footer>
-                <img src="../images/GMDLogo.png" height=75px width=75px />
-                <p><b>Graphic & Multimedia Design</b></p>
-                <p><a href=mailto:skasalovic@vcccd.edu>Svetlana Kasalovic</a></p>
-                <br/>
-                <p><b>Moorpark College</b></p>
-                <p>Communications Building</p>
-                <p>7075 Campus Rd</p>
-                <p>Moorpark, CA 93021</p>
-                <p>(805) 378-1400</p>
-                <br>
-                <p>© 2019 Graphic & Multimedia Design</p>
-                <p>Moorpark College</p>
-            </div>
-          </footer>
+        <footer include-html='../folder_footer.html'></footer>
 </body>
 </html>
