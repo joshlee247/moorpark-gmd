@@ -27,3 +27,15 @@ thead td
 {
   color:#555555;
 }
+@media screen and (max-width: 1080px)
+{
+  .content
+  {
+    width:85%;
+  }
+  .inner-article
+  {
+    padding:0;
+  }
+
+}
