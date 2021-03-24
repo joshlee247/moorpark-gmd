@@ -179,6 +179,7 @@ footer{
     bottom: 0;
     display: flex;
     justify-content: center;
+    color: black;
 }
 footer p{
     margin: 0;
