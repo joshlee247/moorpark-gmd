@@ -50,7 +50,7 @@
     background-color: #f2f2f2;
     box-shadow: 0 0 3px rgb(0 0 0 / 20%);
     font-family: 'Open Sans', sans-serif;
-    padding: 0.2rem 2% 0.2rem 2% !important;
+    padding: 0 2% 0 2% !important;
 }
 .max-width-95rem {
     max-width: 95rem;
