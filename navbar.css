@@ -76,7 +76,7 @@
 .nav-item {
     transition: background-color .5s ease;
     padding: 3.5% 5px 3.5% 5px !important;
-    z-index: 1;
+    z-index: 4;
 }
 .nav-item:hover {
     background-color: #545454;
