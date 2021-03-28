@@ -191,3 +191,16 @@ footer a{
 .inner_footer{
     padding: 2em;
 }
+#to-top{
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 0px;
+    border: solid 1px lightgray;
+    padding-top: 5px;
+    width: 60px;
+}
+#to-top:focus{
+    outline: none;
+}
+
