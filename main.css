@@ -11,6 +11,7 @@ a{
     padding: 2em;
     padding-left: 10%;
     padding-right: 10%;
+    min-height: 50vh;
 }
 @media only screen and (max-width: 1080px){
     .content_container {
