@@ -87,6 +87,10 @@
   opacity: 0.7;
 }
 
+.mt-5 {
+    text-align: center;
+}
+
 @media only screen and (max-width: 719px) {
     .image {
         width: 200%;
@@ -115,6 +119,10 @@
     .gallery img {
         width: 100%;
         height: auto
+    }
+    
+    .mt-5 {
+        text-align: left;
     }
 }
 
