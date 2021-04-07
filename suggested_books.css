@@ -1,7 +1,7 @@
 .suggested_books_link{
     color: #545454;
     width: auto;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .suggested_books_link:hover{
     color: #00aeef;
