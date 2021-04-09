@@ -31,3 +31,15 @@ footer{
 .more-recipients{
     display: none;
 }
+
+@media only screen and (max-width: 1199px){
+    .scholarship h1,
+    .scholarship hr,
+    .scholarship ul li{
+        padding-left: 0;
+    }
+
+    .scholarships-container{
+        width: 30.5em;
+    }
+}
