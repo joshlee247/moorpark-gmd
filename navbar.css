@@ -166,6 +166,12 @@
 .search-dropdown:after {
     content: none;
 }
+.search-dropdown .dropdown-menu{
+    pointer-events: none;
+}
+.search-dropdown:hover .dropdown-menu{
+    pointer-events: all;
+}
 .submenu {
     white-space: nowrap;
     overflow: hidden;
