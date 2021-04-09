@@ -31,11 +31,13 @@ h1 {
   text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1em;
+  font-weight: 300;
 }
 
 .header2 {
   text-align: center;
-  padding-top: 350px;
+  padding-top: 30px;
+  font-weight: 300;
 }
 
 #programs, .workPhotos {
@@ -50,22 +52,7 @@ h1 {
 
 #programText, #programText2 {
   line-height: 1.8;
-  font-weight: normal;
-}
-
-.programIcon {
-  float: left;
-  width: 50%;
-}
-
-.iconG {
-  padding-left: 15%;
-  padding-right: 5%;
-}
-
-.iconM {
-  padding-right: 15%;
-  padding-left: 5%;
+  font-weight: 300;
 }
 
 .home-image {
@@ -89,4 +76,47 @@ h1 {
   display: block;
   width: 15%;
   font-weight: 900;
+}
+
+@media only screen and (min-width: 1081px)
+{
+  .programIcon {
+    float: left;
+    width: 50%;
+  }
+  
+  .iconG {
+    padding-left: 15%;
+    padding-right: 5%;
+  }
+  
+  .iconM {
+    padding-right: 15%;
+    padding-left: 5%;
+  }
+
+  .item-1, .item-2, .item-3
+  {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 991px)
+{
+  .home-image 
+  {
+    width: 100%;
+  }
+
+  .item-1, .item-2, .item-3
+  {
+    width: 300px;
+    height: 300px;
+  }
+
+  .iconM, .iconG
+  {
+    padding-top: 40px;
+  }
 }
