@@ -1,6 +1,16 @@
+.mx-auto{
+    max-width: 1000px;
+}
+
 .scholarship h1,
+.scholarship hr,
 .scholarship ul li{
     padding-left: 15%;
+}
+
+.scholarship ul{
+    font-size: .95em;
+    font-weight: 600;
 }
 
 .scholarship{
@@ -9,4 +19,27 @@
 
 footer{
     margin-top: 30px;
+}
+
+.more-button{
+    color: gray;
+    font-weight: 100;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.more-recipients{
+    display: none;
+}
+
+@media only screen and (max-width: 1199px){
+    .scholarship h1,
+    .scholarship hr,
+    .scholarship ul li{
+        padding-left: 0;
+    }
+
+    .scholarships-container{
+        width: 30.5em;
+    }
 }
