@@ -125,6 +125,7 @@
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 1px;
+    outline: none !important;
 }
 .dropdown-menu {
     border-top-color: #545454;
