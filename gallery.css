@@ -1,7 +1,16 @@
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#page-title{
+    padding: 20px 0;
+    font-weight: 300;
+}
+
 .gallery {
   display: grid;
   grid-gap: 0px;
-  padding-left: 21em;
   grid-template-columns: 18em auto 1fr;
 }
 
@@ -18,6 +27,7 @@
   backface-visibility: hidden;
 }
 
+.right-middle,
 .middle {
   position: absolute;
   top: 0;
@@ -25,24 +35,24 @@
   left: 0;
   right: 0;
   height: 100%;
-  width: 200%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: #000000;
 }
 
-.right-middle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 95%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #000000;
-}
+/* .right-middle { */
+/*   position: absolute; */
+/*   top: 0; */
+/*   bottom: 0; */
+/*   left: 0; */
+/*   right: 0; */
+/*   height: 100%; */
+/*   width: 100%; */
+/*   opacity: 0; */
+/*   transition: .5s ease; */
+/*   background-color: #000000; */
+/* } */
 
 .hover-author {
   color: white;
@@ -72,7 +82,6 @@
 
 .img-hover {
   position: relative;
-  width: 50%;
 }
 
 .img-hover:hover .image {
@@ -91,9 +100,9 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 719px) {
+@media only screen and (max-width: 819px) {
     .image {
-        width: 200%;
+        width: 100%;
         padding-left: 0px;
         grid-template-columns: auto;
         height: auto
@@ -110,14 +119,14 @@
     }
     
     .gallery {
-        width: 200%;
+        width: 100%;
         grid-template-columns: 100%;
         padding-left: 0;
         height: auto
     }
     
     .gallery img {
-        width: 100%;
+        width: 97vw;
         height: auto
     }
     
