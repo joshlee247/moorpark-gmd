@@ -77,7 +77,6 @@
 .nav-item {
     transition: background-color .5s ease;
     padding: 3.5% 5px 3.5% 5px !important;
-    z-index: 4;
 }
 .nav-item:hover{
     background-color: #545454;
@@ -85,6 +84,12 @@
 }
 .nav-item:hover > .nav-link{
     color: #f2f2f2 !important;
+}
+.dropdown-menu{
+    pointer-events: none;
+}
+.nav-item:hover .dropdown-menu{
+    pointer-events: all;
 }
 .navbar-nav > .active {
     background-color: #545454;
