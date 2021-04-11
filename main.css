@@ -26,4 +26,5 @@ body {
     min-height: 100vh;
     position: relative;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
