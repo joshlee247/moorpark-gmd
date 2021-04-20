@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/atw8zej.css");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /* format the navbar */
 @media screen and (max-width: 992px) {
     .dropdown:hover>.dropdown-menu {
@@ -53,7 +53,7 @@
 .navbar {
     background-color: #f2f2f2;
     box-shadow: 0 0 3px rgb(0 0 0 / 20%);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     padding: 0 2% 0 2% !important;
 }
 .max-width-95rem {
@@ -62,7 +62,7 @@
 #title-text {
     color: #545454;
     font-size: 19.5px;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     overflow: hidden;
     background: linear-gradient(to right, #4FBBEC, #4FBBEC 50%, #545454 50%);
     background-clip: text;
@@ -77,6 +77,9 @@
 }
 #title-text:hover {
     background-position: -100% 100%;
+}
+.dropdown-toggle::after {
+    display: none;
 }
 .nav-item {
     transition: background-color .5s ease;
@@ -118,12 +121,18 @@
     color: #545454;
     padding: 0;
     margin: 0;
-    font-family: roboto, sans-serif;
-    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300 !important;
     font-style: normal;
     transition: none;
     font-size: 0.9em !important;
     white-space: nowrap;
+}
+.fa-chevron-down {
+    font-size: 8px;
+    position: relative;
+    top: -2px;
+    margin-left: 1px;
 }
 .title {
     font-size: 19.5px;
