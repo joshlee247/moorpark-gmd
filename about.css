@@ -1,0 +1,7 @@
+.content_container p{
+    line-height: 1.8;
+}
+
+.content_container .heading{
+    margin: 1em 0 .5em;
+}
