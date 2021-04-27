@@ -56,11 +56,11 @@
 
 .hover-author {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   position: relative;
   top: 74.9%;
   left: 50%;
-  padding-left: 15%;
+  padding: 0 15%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -69,11 +69,11 @@
 
 .hover-title {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   position: relative;
   top: 75%;
   left: 50%;
-  padding-left: 15%;
+  padding: 0 15%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -101,6 +101,10 @@
 }
 
 @media only screen and (max-width: 819px) {
+    .hover-title,
+    .hover-author{
+        font-size: 27px;
+    }
     .image {
         width: 100%;
         padding-left: 0px;
